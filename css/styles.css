@@ -166,7 +166,8 @@ background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-2
 background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-@media (max-width: 700px) {
+
+@media (max-width: 800px) {
   .intro-tbox h1{
     font-size: 4rem;}
     .nav-links ul li{
