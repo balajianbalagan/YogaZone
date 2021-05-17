@@ -132,11 +132,12 @@ nav .fa{
   display: flex;
   justify-content: center;
   transition: 1s;
-  width: 100%;
+  /* width: 100%; */
 }
 .flash-card1 div{
   margin: 50px;
-  background: #ffe3fe;
+  background: #f953c6;
+  color: #fff;
   text-align: center;
   padding: 50px;
   line-height: 2rem;
@@ -146,6 +147,8 @@ nav .fa{
   transition: 1s;
   flex:1;
    flex-wrap: wrap;
+   font-family: 'Montserrat Alternates', sans-serif;
+   overflow: hidden;
   }
 .flash-card1 div img{
   height: 100px;
@@ -164,10 +167,62 @@ nav .fa{
   background: #f953c6;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 100px 0;
+padding: 100px 0;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+min-height: 100vh;
+}
+.log h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7rem;
+  text-align: center;
+  padding-top: 100px;
+}
+.log-t{
+  text-decoration: none;
+  font-family: 'Jura', sans-serif;
+  border: 2px solid white;
+  color: white;
+  /* background: black; */
+  /* font-size: 4rem; */
+padding: 20px;
+transition: 1s;
+margin: 0 10px;
+}
+.log-t:hover{
+  background: black;
+  border: 2px solid black;
+}
+.log-s:hover{
+  background: white;
+  border: 2px solid white;
+}
+.log-s{
+  transition: 1s;
+  text-decoration: none;
+  font-family: 'Jura', sans-serif;
+  border: 2px solid black;
+  color: black;
+  /* background: #fff; */
+  /* font-size: 4rem; */
+  padding: 20px;
+  margin: 0 10px;
 
 }
-
-@media (max-width: 800px) {
+.log-top{
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  flex-wrap: wrap;
+}
+.log-btn{
+  display: flex;
+  justify-content:center;
+  margin: 100px 0;
+}
+@media (max-width: 700px) {
   .intro-tbox h1{
     font-size: 4rem;}
     .nav-links ul li{
@@ -184,6 +239,8 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
       text-align: left;
       z-index: 2;
       font-size: 1rem;
+      transition: 1s;
+      transition-property: display;
     }
     nav .fa{
       display: block;
@@ -197,4 +254,5 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
       justify-content: space-between;
       flex-direction: column;
     }
+
 }
