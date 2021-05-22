@@ -4,7 +4,11 @@
 }
 *{
   margin: 0;
+
   padding: 0;
+}
+html,body{
+  overflow-x: hidden;
 }
 .header{
   width: 100%;
@@ -305,7 +309,7 @@ nav .fa{
   line-height: 1.35;
 }
 
-.altercard {
+.btncard {
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
@@ -432,7 +436,7 @@ overflow: hidden;
 font-size: 2.4rem;
 padding: 20px;
 transition: 1s;
-margin: 0 10px;
+margin: 50px 10px;
 }
 .log-t:hover{
   background: black;
@@ -451,7 +455,7 @@ margin: 0 10px;
   /* background: #fff; */
   font-size: 2.4rem;
   padding: 20px;
-  margin: 0 10px;
+  margin: 50px 10px;
 
 }
 .log-top{
@@ -463,7 +467,9 @@ margin: 0 10px;
 .log-btn{
   display: flex;
   justify-content:center;
-  margin: 100px 0;
+  margin: 100px ;
+
+  flex-wrap: wrap;
 }
 footer{
  /* position: fixed; */
@@ -611,7 +617,7 @@ footer{
     display: flex;
     justify-content: space-between;
 
-    padding: 100px;
+    padding: 100px auto 100px 0;
 }
 
 .containertop .cardtop {
@@ -748,6 +754,12 @@ footer{
     .nav-links ul li{
       display: block;
       padding: 10px;
+    }
+    .features{
+      padding-left: 45px;
+    }
+    .test{
+      font-size: 2rem;
     }
     .containertop{
       flex-direction: column;
