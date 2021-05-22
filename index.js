@@ -12,3 +12,11 @@ function showMenu(){
   navlinks.style.right = "0";
   navlinks.style.opacity = "1";
 }
+if(window.innerWidth<=700){
+  showMenu();
+  closeMenu();
+}
+if(window.innerWidth>800){
+  closeMenu();
+  showMenu();
+}
