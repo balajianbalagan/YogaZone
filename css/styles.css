@@ -1,23 +1,25 @@
-:root {
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
-}
+
 *{
   margin: 0;
 
   padding: 0;
 }
-html,body{
+body{
   overflow-x: hidden;
+
+
 }
+
 .header{
   width: 100%;
-  min-height: 100vh; /* fallback for old browsers */
+  min-height: 100vh;
+  /* fallback for old browsers */
  /* Chrome 10-25, Safari 5.1-6 */
 background-image: linear-gradient(rgba(249, 83, 198, 0.7),rgba(185, 29, 115, 0.7)),url("https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1200&h=600&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2019%2F04%2F16045736%2Fbenefits-yoga-fb1.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-position: center;
 background-size: cover;
 position: relative;
+
 
 }
 nav{
@@ -25,6 +27,7 @@ nav{
   padding: 2% 6%;
   align-items: center;
   justify-content: space-between;
+
 }
 .brand img{
   height: 50px;
@@ -106,7 +109,7 @@ nav{
   filter: blur(0);
   font-size: 1.5rem;
   opacity: 1;
-  background-color: #ff66cc;
+  background-color: #ff33cc;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 10px 10px 29px -123px rgba(0,0,0,0.75);
@@ -130,6 +133,7 @@ nav{
   align-items: center;
   justify-content:center;
   height: 70vh;
+  animation: linear transitionIn 1.5s;
   color: #fff;
 }
 .intro-tbox h1{
@@ -156,6 +160,7 @@ nav{
   font-family: 'Jura', sans-serif;
   font-weight: 200;
   margin-top: 20px;
+  text-align: center;
   transition: 1s;
 }
 .lmore:hover{
@@ -245,8 +250,8 @@ nav .fa{
   height: 110%;
   background-size: cover;
   background-position: 0 0;
-  transition: transform calc(var(--d) * 1.5) var(--e);
-  pointer-events: none;
+
+
 }
 .card:after {
   content: "";
@@ -256,10 +261,10 @@ nav .fa{
   left: 0;
   width: 100%;
   height: 200%;
-  pointer-events: none;
+
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
   transform: translateY(-50%);
-  transition: transform calc(var(--d) * 2) var(--e);
+
 }
 .card:nth-child(1):before {
   background-image: url(https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
@@ -360,7 +365,7 @@ nav .fa{
 .card:focus-within .content > *:not(.title) {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: calc(var(--d) / 8);
+
   }
 
   .card:focus-within:before, .card:focus-within:after,
@@ -378,7 +383,10 @@ nav .fa{
 
 
 .custom-shape-divider-bottom-1621401639 .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
+}
+.custom-shape-divider-top-1621402082 .shape-fill {
+    fill: #ffffff;
 }
 .flash-card1 div img{
   height: 100px;
@@ -408,9 +416,7 @@ nav .fa{
     height: 69px;
 }
 
-.custom-shape-divider-top-1621402082 .shape-fill {
-    fill: #FFFFFF;
-}
+
 .log{
   background: #f953c6;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
@@ -617,7 +623,7 @@ footer{
     display: flex;
     justify-content: space-between;
 
-    padding: 100px auto 100px 0;
+    padding: 100px 0 100px 0;
 }
 
 .containertop .cardtop {
@@ -758,11 +764,12 @@ footer{
     .features{
       padding-left: 45px;
     }
-    .test{
+    .testt{
       font-size: 2rem;
     }
     .containertop{
       flex-direction: column;
+      padding-bottom: 100px;
     }
     .nav-links{
       position: absolute;
@@ -808,6 +815,243 @@ footer{
     }
     .main {
     line-height: normal;
-    font-size: auto;
+
     }
+}
+
+
+/* courses.html */
+.courselist{
+  margin: 100px 200px 50px;
+}
+.coursegrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 100px;
+  align-items: stretch;
+}
+
+.coursegrid > article {
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  width: 330px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.coursegrid > article img {
+  max-width: 100%;
+}
+
+.coursegrid .text {
+  padding: 20px;
+  font-family: 'Jura',sans-serif;
+  line-height: 2rem;
+}
+.buycoursebtn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff66cc;
+    font-family: 'Montserrat',sans-serif;
+    width: 50%;
+    margin: 50px auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 0;
+}
+.courseauth{
+  font-family: "Montserrat",sans-serif;
+  color: grey;
+  font-size: 1.2rem;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+
+}
+.coursecard{
+  display: flex;
+  flex-direction: column;
+}
+
+/* video transition for meditation page */
+.video-card{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #ffe6ff;
+  width: 50%;
+  border-radius: 20px;
+  margin: 100px auto;
+
+
+}
+.video-list{
+
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.video-title{
+  width: 100%;
+font-family: 'Montserrat',sans-serif;
+padding: 20px 0;
+
+
+}
+.Resources{
+  margin-bottom:200px;
+}
+.video{
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.videodesc{
+  font-family: "Jura",sans-serif;
+  font-weight:bold;
+}
+/* page transition */
+@keyframes transitionIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* form validation */
+.formcontainer {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+  font-family: "Montserrat",sans-serif;
+  margin: 100px auto;
+}
+
+.formheader {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.formheader h2 {
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.form-control select{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: "Jura",sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: "Jura",sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: 	 #ff4dd2;
+	border: 2px solid 	 #ff4dd2;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+.form button:hover{
+  background-color: 	#ff00bf;
+}
+
+/* aboutus */
+.aboutuscont{
+  width: 60%;
+  font-family: "Jura",sans-serif;
+  margin: 100px auto;
+  box-shadow: 1px 2px 0 0;
+  padding: 50px;
+  background-color: #ff4dd2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  line-height: 25px;
+  border-radius: 20px;
+}
+.aboutuscont p{
+  padding: 50px 0;
 }
