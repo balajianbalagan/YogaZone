@@ -33,11 +33,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const gender = document.getElementById('gender');
 const phone = document.getElementById('phone');
-const usernameValue = username.value.trim();
-console.log(usernameValue);
-const emailValue = email.value.trim();
-const genderval = gender.value;
-const phonevalue = phone.value.trim();
+
 form.addEventListener('submit', e => {
 	e.preventDefault();
 
@@ -97,7 +93,7 @@ clickBot.addEventListener('click', () => window.scrollTo({
 }));
 
 clickBot.addEventListener("click",function(){
-
+    
     var nameVal = document.getElementById("username").value;
     document.querySelector("#intro-tbox").style.fontSize = "14px";
     document.querySelector("#intro-tpara").innerHTML = "<p> Hey "+ nameVal+"! Our executives will contact you soon.</p>";
